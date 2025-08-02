@@ -1,0 +1,219 @@
+:root {
+    --background-color: #F5F5F5;
+    --background-social-Google: white;
+    --background-social-Google-Dark: #000000;
+    --text-color-Google: #252525;
+    --background-social-Facebook: #3367d6;
+    --text-color-Facebook: #FFFFFF;
+    --max-width: 550px;
+    --background-login: #8027d8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: none;
+    width: 100%;
+    max-width: var(--max-width);  /* Puedes ajustar este valor */
+    margin: 0 auto;
+}
+
+.login-header {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.login-header h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.login-header p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-header a {
+    color: #4285F4;
+    text-decoration: none;
+}
+
+.social-login {
+    display: flex;
+    flex-direction: row;  /* Cambiado de column a row */
+    gap: 12px;
+    margin-top: 2.5rem;
+    margin-bottom: 20px;
+    justify-content: center; /* Centrar los botones */
+}
+
+.social-btn-Google {
+    background-color: var(--background-social-Google);
+    color: var(--text-color-Google);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.social-btn-Google:hover {
+    background-color: var(--background-social-Google-Dark);
+    color: var(--text-color-Facebook);
+    opacity: 0.7;
+}
+
+.social-btn-Facebook {
+    background-color: var(--background-social-Facebook);
+    color: var(--text-color-Facebook);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.social-btn-Facebook:hover {
+    background-color: var(--background-social-Facebook);
+    opacity: 0.9;
+}
+
+.social-btn-Google, 
+.social-btn-Facebook {
+    flex: 1;  /* Ocupan espacio equitativo */
+    min-width: 120px;  /* Ancho mínimo */
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.divider {
+    text-align: center;
+    color: #999;
+    margin: 20px 0;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 45%;
+    height: 1px;
+    background-color: #eee;
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.datos-conteiner {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: var(--max-width);
+    padding: 40px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 14px 16px;  /* Más relleno para mejor apariencia */
+    border: 1px solid #ddd;
+    border-radius: 8px;  /* Bordes más redondeados */
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4285F4;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.forgot-password a {
+    color: #4285F4;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--background-login);
+    opacity: 0.9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: var(--background-login);
+    opacity: 1;
+}
+
+.solucionar {
+    margin: 0;
+}
