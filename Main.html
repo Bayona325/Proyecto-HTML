@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Main.css">
+    <title>CarAdver - Dashboard</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">caradver</div>
+        <div class="search">
+            <input type="text" placeholder="Search or type">
+        </div>
+        <ul class="menu">
+            <li class="active">Dashboard</li>
+            <li>Assets</li>
+            <li>Booking</li>
+            <li>Sell Cars</li>
+            <li>Services</li>
+        </ul>
+    </div>
+    
+    <div class="main-content">
+        <div class="header">
+            <h2>Dashboard</h2>
+            <div class="user-actions">
+                <span>Settings</span>
+                <span>Log out</span>
+            </div>
+        </div>
+        
+        <div class="recommendation-cards">
+            <div class="recommendation-card">
+                <div class="recommendation-percent">64%</div>
+                <div class="recommendation-label">Recommend</div>
+            </div>
+            <div class="recommendation-card">
+                <div class="recommendation-percent">94%</div>
+                <div class="recommendation-label">Recommend</div>
+            </div>
+            <div class="recommendation-card">
+                <div class="recommendation-percent">89%</div>
+                <div class="recommendation-label">Recommend</div>
+            </div>
+        </div>
+        
+        <div class="car-grid">
+            <div class="car-card">
+                <div class="car-image" onclick="selectCar('BMW X1')">BMW X1</div>
+                <div class="car-info">
+                    <div class="car-name">BMW X1</div>
+                    <div class="car-mileage">132K</div>
+                    <div class="car-price">$32/h</div>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <div class="car-image" onclick="selectCar('Lamborghini Urus')">Lamborghini Urus</div>
+                <div class="car-info">
+                    <div class="car-name">Lamborghini Urus</div>
+                    <div class="car-mileage">232K</div>
+                    <div class="car-price">$42/h</div>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <div class="car-image" onclick="selectCar('Volvo XC90')">Volvo XC90</div>
+                <div class="car-info">
+                    <div class="car-name">Volvo XC90</div>
+                    <div class="car-mileage">532K</div>
+                    <div class="car-price">$85/h</div>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <div class="car-image" onclick="selectCar('Jeep Rubicon')">Jeep Rubicon</div>
+                <div class="car-info">
+                    <div class="car-name">Jeep Rubicon</div>
+                    <div class="car-mileage">360K</div>
+                    <div class="car-price">$29/h</div>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <div class="car-image" onclick="selectCar('Mercedes-Benz AMG G 63')">Mercedes-Benz AMG G 63</div>
+                <div class="car-info">
+                    <div class="car-name">Mercedes-Benz AMG G 63</div>
+                    <div class="car-mileage">769K</div>
+                    <div class="car-price">$26/h</div>
+                </div>
+            </div>
+            
+            <div class="car-card">
+                <div class="car-image" onclick="selectCar('Porsche 911 GT3 RS')">Porsche 911 GT3 RS</div>
+                <div class="car-info">
+                    <div class="car-name">Porsche 911 GT3 RS</div>
+                    <div class="car-mileage">852K</div>
+                    <div class="car-price">$15/h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function selectCar(carName) {
+            alert(`Has seleccionado el ${carName}`);
+            // Aquí puedes agregar la lógica para manejar la selección del auto
+        }
+    </script>
+</body>
+</html>
