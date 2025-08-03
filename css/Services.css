@@ -104,12 +104,17 @@ body {
 }
 
 .menu-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
     padding: 15px 25px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.menu-item a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
 }
 
 .menu-item img {
