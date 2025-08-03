@@ -9,38 +9,38 @@
 <body>
     <div class="sidebar">
         <div class="logo">caradver</div>
-        <div class="search">
-            <input type="text" placeholder="Search or type">
-        </div>
         <ul class="menu">
-            <li class="active">Dashboard</li>
-            <li>Assets</li>
-            <li>Booking</li>
-            <li>Sell Cars</li>
-            <li>Services</li>
+            <li class="active"><a href="Main.html">Dashboard</a></li>
+            <li><a href="#">Assets</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+            <li><a href="#">Sell Cars</a></li>
+            <li><a href="Services.html">Services</a></li>
         </ul>
+        <div class="user-actions">
+            <div class="menu-item">Settings</div>
+            <div class="menu-item">Log out</div>
+        </div>
     </div>
     
     <div class="main-content">
         <div class="header">
-            <h2>Dashboard</h2>
-            <div class="user-actions">
-                <span>Settings</span>
-                <span>Log out</span>
+            <div class="search-container">
+                <input type="text" placeholder="Search or type">
             </div>
+            <h2>Dashboard</h2>
         </div>
         
         <div class="recommendation-cards">
-            <div class="recommendation-card">
-                <div class="recommendation-percent">64%</div>
-                <div class="recommendation-label">Recommend</div>
-            </div>
             <div class="recommendation-card">
                 <div class="recommendation-percent">94%</div>
                 <div class="recommendation-label">Recommend</div>
             </div>
             <div class="recommendation-card">
                 <div class="recommendation-percent">89%</div>
+                <div class="recommendation-label">Recommend</div>
+            </div>
+            <div class="recommendation-card">
+                <div class="recommendation-percent">75%</div>
                 <div class="recommendation-label">Recommend</div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <div class="car-image" onclick="selectCar('BMW X1')">BMW X1</div>
                 <div class="car-info">
                     <div class="car-name">BMW X1</div>
-                    <div class="car-mileage">132K</div>
+                    <div class="car-mileage">13ZK</div>
                     <div class="car-price">$32/h</div>
                 </div>
             </div>
@@ -59,7 +59,7 @@
                 <div class="car-image" onclick="selectCar('Lamborghini Urus')">Lamborghini Urus</div>
                 <div class="car-info">
                     <div class="car-name">Lamborghini Urus</div>
-                    <div class="car-mileage">232K</div>
+                    <div class="car-mileage">23ZK</div>
                     <div class="car-price">$42/h</div>
                 </div>
             </div>
@@ -68,8 +68,8 @@
                 <div class="car-image" onclick="selectCar('Volvo XC90')">Volvo XC90</div>
                 <div class="car-info">
                     <div class="car-name">Volvo XC90</div>
-                    <div class="car-mileage">532K</div>
-                    <div class="car-price">$85/h</div>
+                    <div class="car-mileage">53ZK</div>
+                    <div class="car-price">$55/h</div>
                 </div>
             </div>
             
@@ -77,7 +77,7 @@
                 <div class="car-image" onclick="selectCar('Jeep Rubicon')">Jeep Rubicon</div>
                 <div class="car-info">
                     <div class="car-name">Jeep Rubicon</div>
-                    <div class="car-mileage">360K</div>
+                    <div class="car-mileage">350K</div>
                     <div class="car-price">$29/h</div>
                 </div>
             </div>

@@ -3,143 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Services.css">
+    <link rel="stylesheet" href="css/Services.css"> <!-- Cambiado a Main.css -->
     <title>Service Station</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Service Station</h1>
-        
-        <!-- Primera columna -->
-        <div class="panel">
-            <ul>
-                <li>A1</li>
-                <li>A2</li>
-                <li>A3</li>
-                <li>A4</li>
-                <li>A5</li>
-                <li>A6</li>
-                <li>A7</li>
-                <li>A8</li>
-                <li>A9</li>
-                <li>A10</li>
-            </ul>
+    <div class="sidebar">
+        <div class="logo">caradver</div>
+        <ul class="menu">
+            <li><a href="Main.html">Dashboard</a></li>
+            <li><a href="#">Assets</a></li>
+            <li><a href="Booking.html">Booking</a></li>
+            <li><a href="#">Sell Cars</a></li>
+            <li class="active"><a href="Services.html">Services</a></li>
+        </ul>
+        <div class="user-actions">
+            <div class="menu-item">Settings</div>
+            <div class="menu-item">Log out</div>
         </div>
-        
-        <div class="panel">
-            <ul>
-                <li>B1</li>
-                <li>B2</li>
-                <li>B3</li>
-                <li>B4</li>
-                <li>B5</li>
-                <li>B6</li>
-                <li>B7</li>
-                <li>B8</li>
-                <li>B9</li>
-                <li>B10</li>
-            </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="search-container">
+            <input type="text" placeholder="Search or type">
         </div>
-        
-        <div class="panel">
-            <div class="status-columns">
-                <div>
-                    <div class="status-item">
-                        <div class="status-circle ready"></div>
-                        <span>Ready</span>
+
+        <div class="container">
+            <h1>Service Station</h1>
+            
+            <!-- Primera columna -->
+            <div class="panel">
+                <ul>
+                    <li>A1</li>
+                    <li>A2</li>
+                    <li>A3</li>
+                    <li>A4</li>
+                    <li>A5</li>
+                    <li>A6</li>
+                    <li>A7</li>
+                    <li>A8</li>
+                    <li>A9</li>
+                    <li>A10</li>
+                </ul>
+            </div>
+            
+            <div class="panel">
+                <ul>
+                    <li>B1</li>
+                    <li>B2</li>
+                    <li>B3</li>
+                    <li>B4</li>
+                    <li>B5</li>
+                    <li>B6</li>
+                    <li>B7</li>
+                    <li>B8</li>
+                    <li>B9</li>
+                    <li>B10</li>
+                </ul>
+            </div>
+            
+            <div class="panel">
+                <div class="status-columns">
+                    <div>
+                        <div class="status-item">
+                            <div class="status-circle ready"></div>
+                            <span>Ready</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-circle booked"></div>
+                            <span>Booked</span>
+                        </div>
+                        <div class="status-item">
+                            <div class="status-circle current"></div>
+                            <span>Current Station</span>
+                        </div>
                     </div>
-                    <div class="status-item">
-                        <div class="status-circle booked"></div>
-                        <span>Booked</span>
+                </div>
+            </div>
+            
+            <!-- Segunda fila -->
+            <div class="panel">
+                <h2>Service Required</h2>
+                <div class="service-item">
+                    <span class="service-name">Center Care</span>
+                    <span class="service-price">$48</span>
+                </div>
+                <div style="font-size: 14px; color: #666; margin-bottom: 15px;">Processing: 1 hours</div>
+                
+                <div class="service-item">
+                    <span class="service-name">Diagnostics</span>
+                    <span class="service-price">$78</span>
+                </div>
+                <div style="font-size: 14px; color: #666; margin-bottom: 15px;">Processing: 2 hours</div>
+                
+                <div class="service-item">
+                    <span class="service-name">Inner Cleaning</span>
+                    <span class="service-price">$78</span>
+                </div>
+                <div style="font-size: 14px; color: #666;">Processing: 1 hours</div>
+            </div>
+            
+            <div class="panel">
+                <h2>Your Order</h2>
+                <div class="order-item">
+                    <span class="service-name">Brake fluid change</span>
+                    <span class="service-price">$32</span>
+                </div>
+                <div class="order-item">
+                    <span class="service-name">Diagnostics</span>
+                    <span class="service-price">$32</span>
+                </div>
+                <div class="order-item">
+                    <span class="service-name">External Washing</span>
+                    <span class="service-price">$10</span>
+                </div>
+                
+                <div class="add-service">Add Services</div>
+            </div>
+            
+            <div class="panel">
+                <h2>Service Schedule</h2>
+                <div class="schedule-item">
+                    <div>Upgrade your favorite car periodically</div>
+                    <div class="schedule-time">Today: 10:00</div>
+                    <div class="schedule-price">Fix Price: $1,200</div>
+                </div>
+                
+                <div class="schedule-item">
+                    <div>Buy spare parts for suspension</div>
+                    <div class="schedule-time">Today: 14:00</div>
+                    <div class="schedule-price">Fix Price: $1,400</div>
+                </div>
+            </div>
+            
+            <!-- Tercera fila -->
+            <div class="panel" style="grid-column: span 2;">
+                <h2>Pay $96</h2>
+                <div class="circular-stats">
+                    <div class="circular-item">
+                        <div class="circular-progress"><span>70%</span></div>
+                        <div class="circular-label">Oil Level<br>Engine | Don't Replace</div>
                     </div>
-                    <div class="status-item">
-                        <div class="status-circle current"></div>
-                        <span>Current Station</span>
+                    <div class="circular-item">
+                        <div class="circular-progress"><span>30%</span></div>
+                        <div class="circular-label">Brake Pads<br>Wheels | Still Good</div>
+                    </div>
+                    <div class="circular-item">
+                        <div class="circular-progress"><span>90%</span></div>
+                        <div class="circular-label">Steering<br>Drivetrain | Need Change</div>
+                    </div>
+                    <div class="circular-item">
+                        <div class="circular-progress"><span>70%</span></div>
+                        <div class="circular-label">Oil Level<br>Engine | Don't Replace</div>
                     </div>
                 </div>
             </div>
-        </div>
-        
-        <!-- Segunda fila -->
-        <div class="panel">
-            <h2>Service Required</h2>
-            <div class="service-item">
-                <span class="service-name">Center Care</span>
-                <span class="service-price">$48</span>
-            </div>
-            <div style="font-size: 14px; color: #666; margin-bottom: 15px;">Processing: 1 hours</div>
             
-            <div class="service-item">
-                <span class="service-name">Diagnostics</span>
-                <span class="service-price">$78</span>
+            <div class="panel" style="display: flex; align-items: flex-end;">
+                <button class="pay-button">Pay Now</button>
             </div>
-            <div style="font-size: 14px; color: #666; margin-bottom: 15px;">Processing: 2 hours</div>
-            
-            <div class="service-item">
-                <span class="service-name">Inner Cleaning</span>
-                <span class="service-price">$78</span>
-            </div>
-            <div style="font-size: 14px; color: #666;">Processing: 1 hours</div>
-        </div>
-        
-        <div class="panel">
-            <h2>Your Order</h2>
-            <div class="order-item">
-                <span class="service-name">Brake fluid change</span>
-                <span class="service-price">$32</span>
-            </div>
-            <div class="order-item">
-                <span class="service-name">Diagnostics</span>
-                <span class="service-price">$32</span>
-            </div>
-            <div class="order-item">
-                <span class="service-name">External Washing</span>
-                <span class="service-price">$10</span>
-            </div>
-            
-            <div class="add-service">Add Services</div>
-        </div>
-        
-        <div class="panel">
-            <h2>Service Schedule</h2>
-            <div class="schedule-item">
-                <div>Upgrade your favorite car periodically</div>
-                <div class="schedule-time">Today: 10:00</div>
-                <div class="schedule-price">Fix Price: $1,200</div>
-            </div>
-            
-            <div class="schedule-item">
-                <div>Buy spare parts for suspension</div>
-                <div class="schedule-time">Today: 14:00</div>
-                <div class="schedule-price">Fix Price: $1,400</div>
-            </div>
-        </div>
-        
-        <!-- Tercera fila -->
-        <div class="panel" style="grid-column: span 2;">
-            <h2>Pay $96</h2>
-            <div class="circular-stats">
-                <div class="circular-item">
-                    <div class="circular-progress"><span>70%</span></div>
-                    <div class="circular-label">Oil Level<br>Engine | Don't Replace</div>
-                </div>
-                <div class="circular-item">
-                    <div class="circular-progress"><span>30%</span></div>
-                    <div class="circular-label">Brake Pads<br>Wheels | Still Good</div>
-                </div>
-                <div class="circular-item">
-                    <div class="circular-progress"><span>90%</span></div>
-                    <div class="circular-label">Steering<br>Drivetrain | Need Change</div>
-                </div>
-                <div class="circular-item">
-                    <div class="circular-progress"><span>70%</span></div>
-                    <div class="circular-label">Oil Level<br>Engine | Don't Replace</div>
-                </div>
-            </div>
-        </div>
-        
-        <div class="panel" style="display: flex; align-items: flex-end;">
-            <button class="pay-button">Pay Now</button>
         </div>
     </div>
 </body>
