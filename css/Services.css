@@ -35,11 +35,25 @@ body {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     font-size: 24px;
     font-weight: bold;
     padding: 25px 20px;
-    text-align: center;
     color: var(--text-title);
+}
+
+.logo img {
+    width: 28px;  /* Aumentado de 20px */
+    height: 28px; /* Aumentado de 20px */
+}
+
+.logo p {
+    margin: 0;
+    font-size: 20px; /* Aumentado de 14px */
+    line-height: 1;
+    font-weight: bold;
 }
 
 .menu {
@@ -66,9 +80,22 @@ body {
 }
 
 .menu li a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     text-decoration: none;
     color: inherit;
-    display: block;
+}
+
+.menu li a img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu li a p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
 }
 
 .user-actions {
@@ -77,9 +104,23 @@ body {
 }
 
 .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     padding: 15px 25px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.menu-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.menu-item p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1;
 }
 
 .menu-item:hover {
