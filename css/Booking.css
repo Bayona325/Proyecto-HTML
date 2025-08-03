@@ -1,8 +1,12 @@
 :root {
     --background-color: #F5F5F5;
     --background-color-sidebar: white;
-    --text-color: #555555;
+    --text-color: #5F6165;
+    --text-title: #2D2D2D;
     --text-color-dark: #000000;
+    --dark-gray: #7f8c8d;
+    --border-color: #ddd;
+    --border-left-color: #555555;
 }
 
 * {
@@ -20,6 +24,76 @@ body {
 
 html, body {
     height: 100%;
+}
+
+.sidebar {
+    width: 220px;
+    background-color: var(--background-color-sidebar);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 25px 20px;
+    text-align: center;
+    color: var(--text-title);
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.menu li {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-left: 4px solid transparent;
+}
+
+.menu li:hover {
+    background-color: var(--background-color);
+}
+
+.menu li.active {
+    background-color: var(--background-color);
+    border-left: 4px solid var(--border-left-color);
+}
+
+.menu li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.user-actions {
+    padding: 15px 0;
+    color: var(--text-color);
+}
+
+.menu-item {
+    padding: 15px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-item:hover {
+    background-color: var(--background-color);
+}
+
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+    width: calc(100% - 220px);
 }
 
 .main-content {
@@ -126,60 +200,4 @@ html, body {
     .car-grid {
         grid-template-columns: 1fr;
     }
-}
-
-.sidebar {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    position: fixed;
-    width: 250px;
-    background-color: var(--background-color-sidebar);
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.user-actions {
-    margin-top: auto;
-    padding: 20px;
-    border-top: 1px solid #eee;
-}
-
-.menu {
-    color: var(--text-color);
-}
-
-.menu:hover {
-    background-color: var(--background-color);
-    color: #000;
-}
-
-.user-actions .menu-item {
-    display: flex;
-    align-items: center;
-    padding: 12px 15px;
-    cursor: pointer;
-    color: var(--text-color);
-    transition: all 0.2s;
-    border-radius: 8px;
-    margin-bottom: 5px;
-}
-
-.user-actions .menu-item:last-child {
-    margin-bottom: 0;
-}
-
-.user-actions .menu-item:hover {
-    background-color: var(--background-color);
-    color: var(--text-color-dark);
-}
-
-.user-actions .menu-item::before {
-    content: "";
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
