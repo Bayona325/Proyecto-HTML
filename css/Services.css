@@ -2,6 +2,7 @@
     --background-color: #F5F5F5;
     --background-color-sidebar: white;
     --text-color: #5F6165;
+    --text-color-ligth: white;
     --text-title: #2D2D2D;
     --text-color-dark: #000000;
     --primary: #2c3e50;
@@ -9,7 +10,11 @@
     --light-gray: #ecf0f1;
     --dark-gray: #7f8c8d;
     --border-color: #ddd;
+    --border-color-dark: #5c5c5c;
     --border-left-color: #555555;
+    --background-none: #F5F5F5;
+    --background-booked: red;
+    --background-current: purple;
 }
 
 body {
@@ -17,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f5f5f5;
+    background-color: var(--background-color);
     display: flex;
     min-height: 100vh;
 }
@@ -147,10 +152,8 @@ body {
 }
 
 .panel {
-    background: white;
     border-radius: 8px;
     padding: 20px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     margin-bottom: 20px;
 }
 
@@ -183,7 +186,7 @@ h3 {
 }
 
 .station-slot {
-    background: var(--light-gray);
+    background: var(--background-color-sidebar);
     padding: 8px;
     text-align: center;
     border-radius: 4px;
@@ -207,12 +210,26 @@ h3 {
 .status-dot {
     width: 12px;
     height: 12px;
+    border: 1px solid var(--border-color-dark);
     border-radius: 50%;
 }
 
-.ready { background: #2ecc71; }
-.booked { background: #f39c12; }
-.current { background: #3498db; }
+.ready {
+    background: var(--background-none);
+    color: var(--text-color-ligth);
+}
+
+.booked {
+    background: var(--background-booked);
+    opacity: 0.7;
+    color: var(--text-color-ligth);
+}
+
+.current {
+    background: var(--background-current);
+    opacity: 0.7;
+    color: var(--text-color-ligth);
+}
 
 .service-list {
     margin: 15px 0;
