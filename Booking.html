@@ -62,76 +62,95 @@
     </div>
 
     <div class="main-content">
-        <div class="search-bar">
-            <input type="text" placeholder="Search or type">
+        <div class="header">
+            <div class="sticky-header">
+                <div class="search-container">
+                    <input type="text" placeholder="Search or type">
+                </div>
+                <div class="user-actions-top">
+                    <div class="notification-btn">
+                        <img src="src/img/notification.svg" alt="Notifications">
+                    </div>
+                    <div class="profile-btn">
+                        <img src="src/img/Perfil.png" alt="Profile">
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="car-grid">
             <!-- Fila 1 -->
             <div class="car-card">
-                <div class="car-image">BMW X1 Image</div>
+                <div class="car-image" onclick="selectCar('BMW X1')">
+                    <img src="src/img/Main/BMW_X1.png" alt="BMW X1">
+                </div>
                 <div class="car-info">
-                    <div class="recommendation"><span class="percentage">64%</span> Recommend</div>
                     <div class="car-name">BMW X1</div>
                     <div class="car-mileage">132K</div>
                     <div class="car-price">$32/h</div>
                 </div>
             </div>
-
+            
             <div class="car-card">
-                <div class="car-image">Lamborghini Urus Image</div>
+                <div class="car-image" onclick="selectCar('Lamborghini Urus')">
+                    <img src="src/img/Main/Lamborghini_Urus.png" alt="Lamborghini Urus">
+                </div>
                 <div class="car-info">
-                    <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Lamborghini Urus</div>
-                    <div class="car-mileage">232K</div>
+                    <div class="car-mileage">23ZK</div>
                     <div class="car-price">$42/h</div>
                 </div>
             </div>
-
+            
             <div class="car-card">
-                <div class="car-image">Volvo XC90 Image</div>
+                <div class="car-image" onclick="selectCar('Volvo XC90')">
+                    <img src="src/img/Main/Volvo_XC90.png" alt="Volvo XC90">
+                </div>
                 <div class="car-info">
-                    <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Volvo XC90</div>
-                    <div class="car-mileage">532K</div>
+                    <div class="car-mileage">53ZK</div>
                     <div class="car-price">$55/h</div>
                 </div>
             </div>
-
-            <!-- Fila 2 -->
+            
             <div class="car-card">
-                <div class="car-image">Jeep Rubicon Image</div>
+                <div class="car-image" onclick="selectCar('Jeep Rubicon')">
+                    <img src="src/img/Main/Jeep_Rubicon.png" alt="Jeep Rubicon">
+                </div>
                 <div class="car-info">
-                    <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Jeep Rubicon</div>
                     <div class="car-mileage">350K</div>
                     <div class="car-price">$29/h</div>
                 </div>
             </div>
-
+            
             <div class="car-card">
-                <div class="car-image">Mercedes-Benz AMG G 63 Image</div>
+                <div class="car-image" onclick="selectCar('Mercedes-Benz AMG G 63')">
+                    <img src="src/img/Main/Mercedes-Benz_AMG_G_63.png" alt="Mercedes-Benz AMG G 63">
+                </div>
                 <div class="car-info">
-                    <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Mercedes-Benz AMG G 63</div>
-                    <div class="car-mileage">768K</div>
+                    <div class="car-mileage">769K</div>
                     <div class="car-price">$26/h</div>
                 </div>
             </div>
-
+            
             <div class="car-card">
-                <div class="car-image">Porsche 911 GT3 RS Image</div>
+                <div class="car-image" onclick="selectCar('Porsche 911 GT3 RS')">
+                    <img src="src/img/Main/Porsche_911_GT3_RS.png" alt="Porsche 911 GT3 RS">
+                </div>
                 <div class="car-info">
-                    <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Porsche 911 GT3 RS</div>
-                    <div class="car-mileage">862K</div>
-                    <div class="car-price">$16/h</div>
+                    <div class="car-mileage">852K</div>
+                    <div class="car-price">$15/h</div>
                 </div>
             </div>
 
             <!-- Fila 3 -->
             <div class="car-card">
-                <div class="car-image">BMW M5 Image</div>
+                <div class="car-image">
+                    <img src="src/img/Main/BMW_M5.png" alt="BMW M5">
+                </div>
                 <div class="car-info">
                     <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">BMW M5</div>
@@ -141,7 +160,9 @@
             </div>
 
             <div class="car-card">
-                <div class="car-image">Lamborghini Aventador Image</div>
+                <div class="car-image">
+                    <img src="src/img/Main/Lamborghini_Aventador.png" alt="Lamborghini Aventador">
+                </div>
                 <div class="car-info">
                     <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Lamborghini Aventador</div>
@@ -151,7 +172,9 @@
             </div>
 
             <div class="car-card">
-                <div class="car-image">Mercedes-Benz AMG GT Image</div>
+                <div class="car-image">
+                    <img src="src/img/Main/Mercedes-Benz_AMG_GT.png" alt="Mercedes-Benz AMG GT">
+                </div>
                 <div class="car-info">
                     <div class="recommendation"><span class="percentage">56%</span> Recommend</div>
                     <div class="car-name">Mercedes-Benz AMG GT</div>
