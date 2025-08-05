@@ -74,6 +74,7 @@ body {
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s;
+    gap: 10px;
 }
 
 .social-btn-Google:hover {
@@ -94,6 +95,7 @@ body {
     cursor: pointer;
     font-weight: 500;
     transition: background-color 0.3s;
+    gap: 10px;
 }
 
 .social-btn-Facebook:hover {
