@@ -20,7 +20,7 @@
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li class="active">
+            <li>
                 <a href="Assets.html">
                     <img src="src/img/Assets.svg" alt="Assets" />
                     <p>Assets</p>
@@ -32,7 +32,7 @@
                     <p>Booking</p>
                 </a>
             </li>
-            <li>
+            <li  class="active">
                 <a href="Sell_Cars.html">
                     <img src="src/img/Sell-Cars.svg" alt="Sell Cars" />
                     <p>Sell Cars</p>
@@ -81,29 +81,37 @@
 
 <div class="sell-cars-section">
     <h2>Sell Cars</h2>
-    <div class="sell-cars-top">
+    <div class="sell-cars-top-flex">
         <div class="car-highlight">
             <h3>2022 Mercedes Benz</h3>
-            <img src="img/mercedes.png" alt="2022 Mercedes Benz" class="car-main-img">
+            <div class="car-img-box">
+                <img src="img/mercedes.png" alt="2022 Mercedes Benz" class="car-main-img">
+            </div>
         </div>
-        <div class="tracking-history">
+        <div class="tracking-history-card">
             <h4>Tracking History</h4>
             <img src="img/tracking.png" alt="Tracking History" class="tracking-img">
         </div>
     </div>
-    <h2>Offers</h2>
+    <div class="offers-header">
+        <h2>Offers</h2>
+        <div class="offers-filters">
+            <button class="filter-btn active">New</button>
+            <button class="filter-btn">BMW</button>
+        </div>
+    </div>
     <div class="offers-list">
         <!-- Oferta 1 -->
         <div class="offer-card">
             <div class="offer-user">
-                <img src="img/user1.png" alt="Kilian James" class="offer-avatar">
+            
                 <div>
                     <h4>Kilian James</h4>
                     <p class="offer-price">$16,605 <span>average price</span></p>
                     <p class="offer-market">market average is $16,324</p>
                 </div>
             </div>
-            <div class="offer-metrics">
+            <div class="offer-metrics-row">
                 <div class="metric">
                     <div class="metric-circle green">45%</div>
                     <span>Impression Share</span>
@@ -113,26 +121,26 @@
                     <span>Cost/Per Unit Turned</span>
                 </div>
                 <div class="metric">
-                    <div class="metric-icon blue"><img src="img/model-spend.png" alt="Model Spend"></div>
+                    <div class="metric-icon blue"><img src="img/car.png" alt="Model Spend"></div>
                     <span>$1,174<br>Model Spend</span>
                 </div>
                 <div class="metric">
-                    <div class="metric-icon pink"><img src="img/model-spend2.png" alt="Model Spend"></div>
-                    <span>$1,174<br>Model Spend per Unit Turned</span>
+                    <div class="metric-icon pink"><img src="img/flecha.png" alt="Model Spend"></div>
+                    <span>$811<br>Spend per Unit Turned</span>
                 </div>
             </div>
         </div>
-        <!-- Oferta 2 (puedes duplicar para más ofertas) -->
+        <!-- Oferta 2 -->
         <div class="offer-card">
             <div class="offer-user">
-                <img src="img/user1.png" alt="Kilian James" class="offer-avatar">
+
                 <div>
                     <h4>Kilian James</h4>
                     <p class="offer-price">$16,605 <span>average price</span></p>
                     <p class="offer-market">market average is $16,324</p>
                 </div>
             </div>
-            <div class="offer-metrics">
+            <div class="offer-metrics-row">
                 <div class="metric">
                     <div class="metric-circle green">55%</div>
                     <span>Impression Share</span>
@@ -142,12 +150,12 @@
                     <span>Cost/Per Unit Turned</span>
                 </div>
                 <div class="metric">
-                    <div class="metric-icon blue"><img src="img/model-spend.png" alt="Model Spend"></div>
+                    <div class="metric-icon blue"><img src="img/car.png" alt="Model Spend"></div>
                     <span>$1,174<br>Model Spend</span>
                 </div>
                 <div class="metric">
-                    <div class="metric-icon pink"><img src="img/model-spend2.png" alt="Model Spend"></div>
-                    <span>$1,174<br>Model Spend per Unit Turned</span>
+                    <div class="metric-icon pink"><img src="img/flecha.png" alt="Model Spend"></div>
+                    <span>$811<br>Spend per Unit Turned</span>
                 </div>
             </div>
         </div>
