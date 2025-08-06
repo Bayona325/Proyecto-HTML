@@ -3,79 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/Sell-Cars.css">
-    <title>CarAdver Sell-Cars</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/Sell_Cars.css">
+    <title>CarAdver - Sell Cars</title>
 </head>
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="src/img/Logo.svg" alt="Logo">
+            <img src="src/img/Logo.svg" alt="Logo" />
             <p>caradver</p>
         </div>
         <ul class="menu">
             <li>
                 <a href="Main.html">
-                    <img src="src/img/Dashboard.svg" alt="Dashboard">
+                    <img src="src/img/Dashboard.svg" alt="Dashboard" />
                     <p>Dashboard</p>
                 </a>
             </li>
-            <li>
+            <li class="active">
                 <a href="Assets.html">
-                    <img src="src/img/Assets.svg" alt="Assets">
+                    <img src="src/img/Assets.svg" alt="Assets" />
                     <p>Assets</p>
                 </a>
             </li>
             <li>
                 <a href="Booking.html">
-                    <img src="src/img/Booking.svg" alt="Booking">
+                    <img src="src/img/Booking.svg" alt="Booking" />
                     <p>Booking</p>
                 </a>
             </li>
-            <li class="active">
-                <a href="Sell-Cars.html">
-                    <img src="src/img/Sell-Cars.svg" alt="Sell Cars">
+            <li>
+                <a href="Sell_Cars.html">
+                    <img src="src/img/Sell-Cars.svg" alt="Sell Cars" />
                     <p>Sell Cars</p>
                 </a>
             </li>
             <li>
                 <a href="Services.html">
-                    <img src="src/img/Services.svg" alt="Services">
+                    <img src="src/img/Services.svg" alt="Services" />
                     <p>Services</p>
                 </a>
             </li>
         </ul>
         <div class="user-actions">
             <div class="menu-item">
-                <a href="Settings.html">
-                    <img src="src/img/Settings.svg" alt="Settings">
+                <a href="#">
+                    <img src="src/img/Settings.svg" alt="Settings" />
                     <p>Settings</p>
                 </a>
             </div>
             <div class="menu-item">
                 <a href="Sign_up.html">
-                    <img src="src/img/Logout.svg" alt="Log out">
+                    <img src="src/img/Logout.svg" alt="Log out" />
                     <p>Log out</p>
                 </a>
             </div>
         </div>
     </div>
-    
     <div class="main-content">
         <div class="header">
             <div class="sticky-header">
                 <div class="search-container">
-                    <input type="text" placeholder="Search or type">
+                    <input type="text" placeholder="Search or type" />
                 </div>
                 <div class="user-actions-top">
                     <div class="notification-btn">
-                        <img src="src/img/notification.svg" alt="Notifications">
+                        <img src="src/img/notification.svg" alt="Notifications" />
                     </div>
                     <div class="profile-btn">
-                        <img src="src/img/Perfil.png" alt="Profile">
+                        <img src="src/img/Perfil.png" alt="Profile" />
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Tarjeta de información principal -->
+
+<div class="sell-cars-section">
+    <h2>Sell Cars</h2>
+    <div class="sell-cars-top">
+        <div class="car-highlight">
+            <h3>2022 Mercedes Benz</h3>
+            <img src="img/mercedes.png" alt="2022 Mercedes Benz" class="car-main-img">
+        </div>
+        <div class="tracking-history">
+            <h4>Tracking History</h4>
+            <img src="img/tracking.png" alt="Tracking History" class="tracking-img">
+        </div>
     </div>
+    <h2>Offers</h2>
+    <div class="offers-list">
+        <!-- Oferta 1 -->
+        <div class="offer-card">
+            <div class="offer-user">
+                <img src="img/user1.png" alt="Kilian James" class="offer-avatar">
+                <div>
+                    <h4>Kilian James</h4>
+                    <p class="offer-price">$16,605 <span>average price</span></p>
+                    <p class="offer-market">market average is $16,324</p>
+                </div>
+            </div>
+            <div class="offer-metrics">
+                <div class="metric">
+                    <div class="metric-circle green">45%</div>
+                    <span>Impression Share</span>
+                </div>
+                <div class="metric">
+                    <div class="metric-circle yellow">$811</div>
+                    <span>Cost/Per Unit Turned</span>
+                </div>
+                <div class="metric">
+                    <div class="metric-icon blue"><img src="img/model-spend.png" alt="Model Spend"></div>
+                    <span>$1,174<br>Model Spend</span>
+                </div>
+                <div class="metric">
+                    <div class="metric-icon pink"><img src="img/model-spend2.png" alt="Model Spend"></div>
+                    <span>$1,174<br>Model Spend per Unit Turned</span>
+                </div>
+            </div>
+        </div>
+        <!-- Oferta 2 (puedes duplicar para más ofertas) -->
+        <div class="offer-card">
+            <div class="offer-user">
+                <img src="img/user1.png" alt="Kilian James" class="offer-avatar">
+                <div>
+                    <h4>Kilian James</h4>
+                    <p class="offer-price">$16,605 <span>average price</span></p>
+                    <p class="offer-market">market average is $16,324</p>
+                </div>
+            </div>
+            <div class="offer-metrics">
+                <div class="metric">
+                    <div class="metric-circle green">55%</div>
+                    <span>Impression Share</span>
+                </div>
+                <div class="metric">
+                    <div class="metric-circle yellow">$811</div>
+                    <span>Cost/Per Unit Turned</span>
+                </div>
+                <div class="metric">
+                    <div class="metric-icon blue"><img src="img/model-spend.png" alt="Model Spend"></div>
+                    <span>$1,174<br>Model Spend</span>
+                </div>
+                <div class="metric">
+                    <div class="metric-icon pink"><img src="img/model-spend2.png" alt="Model Spend"></div>
+                    <span>$1,174<br>Model Spend per Unit Turned</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

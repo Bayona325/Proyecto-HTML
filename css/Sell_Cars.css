@@ -1,0 +1,183 @@
+.sell-cars-section {
+    padding: 30px;
+}
+
+.sell-cars-top {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.car-highlight {
+    background: #fff;
+    border-radius: 18px;
+    padding: 24px 32px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.car-highlight h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.car-main-img {
+    width: 320px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.tracking-history {
+    background: #fff;
+    border-radius: 18px;
+    padding: 18px 18px 8px 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    min-width: 240px;
+}
+
+.tracking-history h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.tracking-img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 12px;
+    background: #f5f5f5;
+}
+
+.offers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.offer-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 18px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.offer-user {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.offer-avatar {
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.offer-user h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+}
+
+.offer-price {
+    font-size: 16px;
+    color: #ff5a5f;
+    font-weight: 700;
+    margin: 2px 0;
+}
+
+.offer-price span {
+    font-size: 13px;
+    color: #888;
+    font-weight: 400;
+}
+
+.offer-market {
+    font-size: 13px;
+    color: #888;
+}
+
+.offer-metrics {
+    display: flex;
+    gap: 28px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.metric {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 80px;
+}
+
+.metric-circle {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.metric-circle.green {
+    background: #e6f7ec;
+    color: #2ecc71;
+}
+
+.metric-circle.yellow {
+    background: #fffbe6;
+    color: #f1c40f;
+}
+
+.metric-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.metric-icon.blue {
+    background: #e6f0fa;
+}
+
+.metric-icon.pink {
+    background: #fae6f0;
+}
+
+.metric-icon img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.metric span {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    line-height: 1.2;
+}
